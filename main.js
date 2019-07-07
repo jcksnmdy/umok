@@ -13,9 +13,9 @@ function mainFunction() {
     console.log(test);
     if (test == 1) {
         text = 0;
-        document.GetElementById('testing').innerHTML = "Hey"
+        document.getElementById('testing').innerHTML = "Hey"
     } else {
-        document.GetElementById('testing').innerHTML = "Bye"
+        document.getElementById('testing').innerHTML = "Bye"
         test = 0;
     }
 }
