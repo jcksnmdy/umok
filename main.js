@@ -1,7 +1,6 @@
 var randomnum, firstQ, secondQ, test;
 test = 0
 function um() {
-    alert("Hey")
     test = 1
 }
 mainClock = setInterval(mainFunction, 20)
@@ -11,6 +10,7 @@ function mainFunction() {
         text = 0
         alert("More thank one")
     } else {
+        test = 0
         return test
 }
 function setup() {
