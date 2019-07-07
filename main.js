@@ -13,8 +13,9 @@ function mainFunction() {
     console.log(test);
     if (test == 1) {
         text = 0;
-        alert("More than one");
+        document.GetElementById('testing').innerHTML = "Hey"
     } else {
+        document.GetElementById('testing').innerHTML = "Bye"
         test = 0;
     }
 }
