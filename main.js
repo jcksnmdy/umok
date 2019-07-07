@@ -13,6 +13,7 @@ function mainFunction() {
     } else {
         test = 0
         return test
+    }
 }
 function setup() {
         window.location = 'index.html';
