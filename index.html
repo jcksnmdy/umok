@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head id="header">
+	<title>Do the Duel</title>
+	<h1 id="headName">Do the Duel</h1>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    Email
+    <textarea id="player1"></textarea>
+    <button onclick="sendMail(); return false">Send</button>
+    Email
+    <textarea id="player2"></textarea>
+    <button onclick="sendMail2(); return false">Send</button>
+    Email
+    <textarea id="player3"></textarea>
+    <button onclick="sendMail3(); return false">Send</button>
+    Email
+    <textarea id="player4"></textarea>
+    <button onclick="sendMail4(); return false">Send</button>
+
+    <textarea id="q" style="display:none;">
+    </textarea>
+</body>
+<style>
+#headName {
+        font-size: 100px;
+        color: rgb(167, 8, 8);
+        text-align: center;
+        background-color: rgba(0, 0, 202, 0.733);
+        
+}
+body {
+        background-color: rgba(53, 167, 8, 0.733);
+}
+</style>
+<script>
+var randomnum, firstQ, secondQ;
+function um() {
+    alert("Hey")
+}
+function sendMail() {
+    randomnum = Math.floor(Math.random(0)*10);
+    firstQ = randomnum
+    if (randomnum == 0) {
+        document.getElementById('q').innerHTML = "What is the apital of America?";
+    }
+    if (randomnum == 1) {
+        document.getElementById('q').innerHTML = "What is the capital of England?";
+    }
+    if (randomnum == 2) {
+        document.getElementById('q').innerHTML = "What is the capital of Argentina";
+    }
+    if (randomnum == 3) {
+        document.getElementById('q').innerHTML = "What is the capital of Ireland";
+    }
+    if (randomnum == 4) {
+        document.getElementById('q').innerHTML = "What is the capital of Scotland";
+    }
+    if (randomnum == 5) {
+        document.getElementById('q').innerHTML = "What is the capital of Iceland";
+    }
+    if (randomnum == 6) {
+        document.getElementById('q').innerHTML = "What is the capital of Japan";
+    }
+    if (randomnum == 7) {
+        document.getElementById('q').innerHTML = "What is the capital of France";
+    }
+    if (randomnum == 8) {
+        document.getElementById('q').innerHTML = "What is the capital of Australia";
+    }
+    if (randomnum == 9) {
+        document.getElementById('q').innerHTML = "What is the capital of China";
+    }
+
+    console.log(randomnum)
+    var link = "mailto:" + escape(document.getElementById('player1').value)
+             + "?subject=Question"
+             + "&body=" + escape(document.getElementById('q').value)
+    ;
+    window.location.href = link;
+}
+function sendMail2() {
+    var link = "mailto:" + escape(document.getElementById('player2').value)
+             + "?subject=Question"
+             + "&body=" + escape(document.getElementById('q').value)
+    ;
+    window.location.href = link;
+    console.log(randomnum)
+}
+function sendMail3() {
+    randomnum = Math.floor(Math.random(0)*10);
+    secondQ = randomnum
+    if (randomnum == 0 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the apital of America?";
+    }
+    if (randomnum == 1 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of England?";
+    }
+    if (randomnum == 2 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of Argentina";
+    }
+    if (randomnum == 3 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of Ireland";
+    }
+    if (randomnum == 4 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of Scotland";
+    }
+    if (randomnum == 5 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of Iceland";
+    }
+    if (randomnum == 6 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of Japan";
+    }
+    if (randomnum == 7 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of France";
+    }
+    if (randomnum == 8 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of Australia";
+    }
+    if (randomnum == 9 && randomnum == firstQ) {
+        document.getElementById('q').innerHTML = "What is the capital of China";
+    }
+    console.log(randomnum)
+    var link = "mailto:" + escape(document.getElementById('player3').value)
+             + "?subject=Question"
+             + "&body=" + escape(document.getElementById('q').value)
+    ;
+
+    window.location.href = link;
+}
+function sendMail4() {
+    var link = "mailto:" + escape(document.getElementById('player4').value)
+             + "?subject=Question"
+             + "&body=" + escape(document.getElementById('q').value)
+    ;
+    window.location.href = link;
+    console.log(randomnum)
+}
+</script>
+</html>
