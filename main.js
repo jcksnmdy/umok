@@ -6,6 +6,7 @@ function um() {
 }
 mainClock = setInterval(mainFunction, 20)
 function mainFunction() {
+    console.log("log")
     if (test == 1) {
         alert("More thank one")
     }
