@@ -2,6 +2,10 @@ var randomnum, firstQ, secondQ, test;
 test = 0
 function um() {
     test = 1
+    uh()
+}
+function uh() {
+    test = o
 }
 mainClock = setInterval(mainFunction, 20)
 function mainFunction() {
