@@ -10,5 +10,16 @@ function mainFunction() {
     if (test == 1) {
         text = 0
         alert("More thank one")
-    }
+    } else {
+        return test
+}
+function setup() {
+        window.location = 'index.html';
+}
+function playerActive() {
+        window.location = 'player.html';
+}
+function begin() {
+        window.location = 'play.html';
+
 }
