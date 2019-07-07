@@ -5,7 +5,7 @@ function um() {
     uh()
 }
 function uh() {
-    test = o
+    test = 0
 }
 mainClock = setInterval(mainFunction, 20)
 function mainFunction() {
